@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+*{
+    box-sizing: border-box;
+}
+/*
+body {
+    width: 90%
+        
+}
+*/
+.row {
+    width: 100%;
+    display: flex;
+}
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*='col-']{
+    float: left;
+    padding: 15px;
+    margin: 10px;
+}
+
+/*      NAV*/
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 20px;
+    float: right;
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    background-color:  #5FA9E6;
+    border-radius: 10px;
+}
+nav {
+    background-color: aliceblue;
+}
+nav ul li:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+nav::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+img {
+    display: block;
+   max-width: 100%;
+   height: auto;
+}
+ h1 {
+    color: #5FA9E6;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    margin: 20px 500px;
+    background-color: aliceblue;
+    font-family: 'Tahoma' sans-serif;
+    padding: 10px;
+    border-radius: 10px 50px;
+    box-shadow: 0 0 5px lightgray;
+}
+.col-3 {
+    width: 80%;
+    background-color: white;
+    margin-bottom:30px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 lightgray; 
+}
+.col-3:hover{
+    box-shadow: 0 0 10px darkgray;
+    transform: scale(1.1);
+}
+ p{
+    text-align: center;
+     font-size: 1.4em;
+     padding: 10px;
+}
+footer row col-1 {
+    float: right;
+}
+footer {
+    background-color: dimgrey;
+    color: white;
+}
+footer h4 {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    color: #5FA9E6;
+}
+
+
+
